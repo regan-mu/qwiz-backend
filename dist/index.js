@@ -17,7 +17,7 @@ const logRequests_1 = require("./middleware/logRequests");
 const errorHandler_1 = __importDefault(require("./middleware/errorHandler"));
 const _404_1 = __importDefault(require("./routes/404"));
 dotenv_1.default.config();
-const PORT = 8080;
+const PORT = process.env.PORT || '3000';
 const app = (0, express_1.default)();
 // middleware
 // Custom Logger Middleware
