@@ -23,7 +23,7 @@ const app = (0, express_1.default)();
 // Custom Logger Middleware
 app.use(logRequests_1.logger);
 // CORS
-const whitelist = ["https://qwiz-client.vercel.app/"];
+const whitelist = ["https://qwiz-client.vercel.app"];
 const corsOptions = {
     origin: (origin, callback) => {
         if (!origin || whitelist.indexOf(origin) !== -1) {
