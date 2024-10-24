@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "ES2020", // Set the JavaScript version output
+    "module": "NodeNext", // CommonJS for Node.js
+    "moduleResolution": "NodeNext",
+    "outDir": "./dist", // Output folder for compiled files
+    "rootDir": "./src", // Source folder for TypeScript files
+    "strict": true, // Enable strict type checking
+    "esModuleInterop": true, // Enables compatibility with CommonJS modules
+    "skipLibCheck": true, // Skip type checking of declaration files
+    "forceConsistentCasingInFileNames": true // Ensure consistent casing in imports
+  },
+  "include": ["src"], // Specifies the folder to include for compilation
+  "exclude": ["node_modules"] // Exclude the node_modules folder
+}
