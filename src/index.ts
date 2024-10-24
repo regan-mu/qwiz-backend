@@ -14,7 +14,7 @@ import errorHandler from "./middleware/errorHandler";
 import notFound from "./routes/404";
 
 dotenv.config();
-const PORT = process.env.PORT || '3000';
+const PORT = process.env.PORT || "3000";
 const app = express();
 
 // middleware
@@ -22,7 +22,7 @@ const app = express();
 app.use(logger);
 
 // CORS
-const whitelist = ["https://qwiz-backend.onrender.com"];
+const whitelist = ["https://qwiz-client.vercel.app/"];
 const corsOptions = {
   origin: (
     origin: string | undefined,

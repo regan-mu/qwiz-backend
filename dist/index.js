@@ -17,13 +17,13 @@ const logRequests_1 = require("./middleware/logRequests");
 const errorHandler_1 = __importDefault(require("./middleware/errorHandler"));
 const _404_1 = __importDefault(require("./routes/404"));
 dotenv_1.default.config();
-const PORT = process.env.PORT || '3000';
+const PORT = process.env.PORT || "3000";
 const app = (0, express_1.default)();
 // middleware
 // Custom Logger Middleware
 app.use(logRequests_1.logger);
 // CORS
-const whitelist = ["https://qwiz-backend.onrender.com"];
+const whitelist = ["https://qwiz-client.vercel.app/"];
 const corsOptions = {
     origin: (origin, callback) => {
         if (!origin || whitelist.indexOf(origin) !== -1) {
