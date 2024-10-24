@@ -49,4 +49,6 @@ npx prisma generate
 npm run dev
 ```
 
-6: Open your browser and navigate to <http://localhost:3000>.
+6: The application will run on <http://localhost:3000>.
+
+7: The frontend is hosted on this **[REPOSITORY](https://github.com/regan-mu/qwiz-client)**
