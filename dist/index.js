@@ -23,7 +23,7 @@ const app = (0, express_1.default)();
 // Custom Logger Middleware
 app.use(logRequests_1.logger);
 // CORS
-const whitelist = ["http://localhost:5173", "http://127.0.0.1:5173"];
+const whitelist = ["https://qwiz-backend.onrender.com"];
 const corsOptions = {
     origin: (origin, callback) => {
         if (!origin || whitelist.indexOf(origin) !== -1) {
