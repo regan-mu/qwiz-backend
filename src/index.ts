@@ -22,7 +22,9 @@ const app = express();
 app.use(logger);
 
 // CORS
-const whitelist = ["https://qwiz-client.vercel.app"];
+const whitelist = [
+  "https://qwiz-client.vercel.app",
+];
 const corsOptions = {
   origin: (
     origin: string | undefined,

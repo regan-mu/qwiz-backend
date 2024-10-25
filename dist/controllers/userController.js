@@ -43,7 +43,7 @@ const retrieveUser = async (req, res, next) => {
     try {
         const user = await client_1.default.user.findFirst({
             where: { id: userId },
-            select: { id: true, email: true, username: true, quizzes: true },
+            select: { id: true, email: true, username: true, quizzes: true, responses: { include: { quiz: true } } },
         });
         if (!user) {
             res.status(404).json({ message: "User doesn't exist" });
